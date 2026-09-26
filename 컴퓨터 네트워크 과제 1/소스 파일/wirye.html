@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 위례 아지트 - 박종은 (JongEun OS)</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="desktop">
+        <!-- Top Menu Bar -->
+        <header id="top-bar">
+            <div class="top-bar-left">
+                <a href="../Main.html" class="brand-link">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>JongEun OS</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="../Main.html" class="nav-item"><i class="fa-solid fa-house"></i> 데스크톱</a>
+                    <a href="profile.html" class="nav-item"><i class="fa-solid fa-user"></i> 01_프로필</a>
+                    <a href="gallery.html" class="nav-item"><i class="fa-solid fa-images"></i> 02_사진첩</a>
+                    <a href="major.html" class="nav-item"><i class="fa-solid fa-book"></i> 03_전공</a>
+                    <a href="wirye.html" class="nav-item active"><i class="fa-solid fa-location-dot"></i> 04_위례_아지트</a>
+                    <a href="guestbook.html" class="nav-item"><i class="fa-solid fa-note-sticky"></i> 05_메모_방명록</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <span id="theme-toggle" class="top-icon" title="다크/라이트 모드 전환"><i class="fa-solid fa-moon"></i></span>
+                <span class="top-icon" title="배터리 100%"><i class="fa-solid fa-battery-full"></i></span>
+                <span class="top-icon" title="Wi-Fi 연결됨"><i class="fa-solid fa-wifi"></i></span>
+                <span id="top-clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace with Open Floating Popup Window -->
+        <main id="workspace">
+            <div class="window-wrapper">
+                <section class="os-window">
+                    <!-- Window Header Bar -->
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <a href="../Main.html" class="btn-close" title="닫기 (Main.html로 돌아가기)"></a>
+                            <a href="../Main.html" class="btn-minimize" title="최소화"></a>
+                            <button class="btn-maximize" onclick="this.closest('.os-window').classList.toggle('maximized')" title="최대화"></button>
+                        </div>
+                        <div class="window-title">
+                            <i class="fa-solid fa-map-location-dot"></i> ~/Desktop/소스 파일/04_위례_아지트.map
+                        </div>
+                        <div class="window-actions">
+                            <span class="page-step">Page 4 / 5</span>
+                        </div>
+                    </div>
+
+                    <!-- Breadcrumbs Path Bar -->
+                    <div class="window-pathbar">
+                        <div class="path-crumbs">
+                            <span>경로:</span>
+                            <a href="../Main.html"><i class="fa-solid fa-house"></i> Home</a> /
+                            <a href="../Main.html">Desktop</a> /
+                            <span class="path-tag">04_위례_아지트.map</span>
+                        </div>
+                        <div>
+                            <span style="font-size: 11px; color: var(--text-secondary);">로컬 가이드 & 추천 스팟</span>
+                        </div>
+                    </div>
+
+                    <!-- Window Content Body -->
+                    <div class="window-body">
+                        <div class="map-card-header">
+                            <span class="location-badge"><i class="fa-solid fa-city"></i> 서울특별시 송파구 & 성남시 위례신도시</span>
+                            <h2>박종은의 위례 라이프 (Wirye Life) 🌿</h2>
+                            <p style="color: var(--text-secondary); margin-top: 4px; font-size: 13.5px;">
+                                서울과 성남의 경계에 위치한 위례신도시는 쾌적한 자연과 조용한 카페거리가 어우러진 최고의 휴식처입니다.
+                            </p>
+                        </div>
+
+                        <!-- Graphical Pin Map Mockup -->
+                        <div class="map-visual">
+                            <div class="map-pin" style="top: 45%; left: 50%;">
+                                <i class="fa-solid fa-house-user"></i>
+                                <span class="pin-tooltip">박종은의 홈 (서울 위례)</span>
+                            </div>
+                            <div class="map-pin" style="top: 25%; left: 30%;">
+                                <i class="fa-solid fa-tree"></i>
+                                <span class="pin-tooltip">위례 수변공원 산책로</span>
+                            </div>
+                            <div class="map-pin" style="top: 60%; left: 68%;">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                <span class="pin-tooltip">위례 트랜짓몰 최애 카페</span>
+                            </div>
+                            <div class="map-grid-bg"></div>
+                        </div>
+
+                        <!-- Spot Recommendations -->
+                        <div class="spot-list">
+                            <div class="spot-item">
+                                <i class="fa-solid fa-tree spot-icon"></i>
+                                <div>
+                                    <strong style="font-size: 14px;">위례 수변공원 & 휴먼링 둘레길</strong>
+                                    <p style="font-size: 12px; color: var(--text-secondary); margin-top: 3px;">
+                                        생각을 정리하거나 러닝을 즐길 때 자주 찾는 위례 대표 녹지 공간입니다. 사계절 풍경이 아름답습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spot-item">
+                                <i class="fa-solid fa-mug-hot spot-icon" style="color: #ed8936;"></i>
+                                <div>
+                                    <strong style="font-size: 14px;">위례 트랜짓몰 카페거리 & 서점</strong>
+                                    <p style="font-size: 12px; color: var(--text-secondary); margin-top: 3px;">
+                                        문헌정보학 전공 서적을 읽거나 과제를 할 때 집중하기 좋은 감성 카페들이 모여있는 곳입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="spot-item">
+                                <i class="fa-solid fa-bicycle spot-icon" style="color: #4299e1;"></i>
+                                <div>
+                                    <strong style="font-size: 14px;">위례 중앙광장 & 문화 공간</strong>
+                                    <p style="font-size: 12px; color: var(--text-secondary); margin-top: 3px;">
+                                        주말마다 버스킹과 마켓이 열리는 활기찬 위례의 중심 문화 교류 스팟입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Window Footer Navigation -->
+                    <div class="window-footer-nav">
+                        <a href="major.html" class="footer-nav-btn"><i class="fa-solid fa-arrow-left"></i> 이전: 03_전공</a>
+                        <a href="guestbook.html" class="footer-nav-btn">다음: 05_메모 및 방명록 <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Dock at the bottom -->
+        <footer id="dock">
+            <div class="dock-container">
+                <a href="../Main.html" class="dock-item" title="홈 (Main.html)">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="profile.html" class="dock-item" title="01_프로필">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="gallery.html" class="dock-item" title="02_사진첩">
+                    <i class="fa-solid fa-images"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="major.html" class="dock-item" title="03_전공">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="wirye.html" class="dock-item active" title="04_위례아지트">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="dock-dot active"></span>
+                </a>
+                <a href="guestbook.html" class="dock-item" title="05_메모및방명록">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <span class="dock-dot"></span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
