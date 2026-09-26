@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 프로필 - 박종은 (JongEun OS)</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="desktop">
+        <!-- Top Menu Bar -->
+        <header id="top-bar">
+            <div class="top-bar-left">
+                <a href="../Main.html" class="brand-link">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>JongEun OS</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="../Main.html" class="nav-item"><i class="fa-solid fa-house"></i> 데스크톱</a>
+                    <a href="profile.html" class="nav-item active"><i class="fa-solid fa-user"></i> 01_프로필</a>
+                    <a href="gallery.html" class="nav-item"><i class="fa-solid fa-images"></i> 02_사진첩</a>
+                    <a href="major.html" class="nav-item"><i class="fa-solid fa-book"></i> 03_전공</a>
+                    <a href="wirye.html" class="nav-item"><i class="fa-solid fa-location-dot"></i> 04_위례_아지트</a>
+                    <a href="guestbook.html" class="nav-item"><i class="fa-solid fa-note-sticky"></i> 05_메모_방명록</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <span id="theme-toggle" class="top-icon" title="다크/라이트 모드 전환"><i class="fa-solid fa-moon"></i></span>
+                <span class="top-icon" title="배터리 100%"><i class="fa-solid fa-battery-full"></i></span>
+                <span class="top-icon" title="Wi-Fi 연결됨"><i class="fa-solid fa-wifi"></i></span>
+                <span id="top-clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace with Open Floating Popup Window -->
+        <main id="workspace">
+            <div class="window-wrapper">
+                <section class="os-window">
+                    <!-- Window Header Bar -->
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <a href="../Main.html" class="btn-close" title="닫기 (Main.html로 돌아가기)"></a>
+                            <a href="../Main.html" class="btn-minimize" title="최소화"></a>
+                            <button class="btn-maximize" onclick="this.closest('.os-window').classList.toggle('maximized')" title="최대화"></button>
+                        </div>
+                        <div class="window-title">
+                            <i class="fa-solid fa-user-circle"></i> ~/Desktop/소스 파일/01_프로필.info
+                        </div>
+                        <div class="window-actions">
+                            <span class="page-step">Page 1 / 5</span>
+                        </div>
+                    </div>
+
+                    <!-- Breadcrumbs Path Bar -->
+                    <div class="window-pathbar">
+                        <div class="path-crumbs">
+                            <span>경로:</span>
+                            <a href="../Main.html"><i class="fa-solid fa-house"></i> Home</a> /
+                            <a href="../Main.html">Desktop</a> /
+                            <span class="path-tag">01_프로필.info</span>
+                        </div>
+                        <div>
+                            <span style="font-size: 11px; color: var(--text-secondary);">인터랙티브 프로필 뷰어</span>
+                        </div>
+                    </div>
+
+                    <!-- Window Content Body -->
+                    <div class="window-body">
+                        <div class="profile-container">
+                            <div class="profile-sidebar">
+                                <div class="profile-img-box">
+                                    <img src="https://raw.githubusercontent.com/bbakjjong7-cmyk/CN_1st_assginment/main/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%BC%EC%A0%9C%201/%EC%86%8C%EC%8A%A4%20%ED%8C%8C%EC%9D%BC/%EB%B0%95%EC%A2%85%EC%9D%80_%ED%94%84%EB%A1%9C%ED%95%84.jpg" alt="박종은 프로필 사진">
+                                    <div class="online-indicator" title="현재 상태: 활동 중"></div>
+                                </div>
+                                <h3>박종은</h3>
+                                <p class="sub-text">Park Jong-Eun</p>
+                                <div class="badge-list">
+                                    <span class="badge"><i class="fa-solid fa-cake-candles"></i> 21세 (2006년 5월 9일생)</span>
+                                    <span class="badge"><i class="fa-solid fa-graduation-cap"></i> 산업보안학과 · 문헌정보학과</span>
+                                    <span class="badge"><i class="fa-solid fa-location-dot"></i> 서울시 위례 거주</span>
+                                </div>
+                            </div>
+                            <div class="profile-content">
+                                <div class="info-section">
+                                    <h4><i class="fa-solid fa-user"></i> ABOUT ME</h4>
+                                    <p class="intro-quote">"다양한 관점을 수용하며 정보의 가치를 발견하고 싶은 박종은입니다."</p>
+                                    
+                                    <div class="info-table">
+                                        <div class="info-row">
+                                            <span class="info-label"><i class="fa-solid fa-signature"></i> 이름</span>
+                                            <span class="info-val">박종은 (Park Jong-Eun)</span>
+                                        </div>
+                                        <div class="info-row">
+                                            <span class="info-label"><i class="fa-solid fa-calendar"></i> 나이</span>
+                                            <span class="info-val">21세</span>
+                                        </div>
+                                        <div class="info-row">
+                                            <span class="info-label"><i class="fa-solid fa-book-open-reader"></i> 전공</span>
+                                            <span class="info-val">중앙대학교 문헌정보학과 / 산업보안학과 복수전공</span>
+                                        </div>
+                                        <div class="info-row">
+                                            <span class="info-label"><i class="fa-solid fa-calendar"></i> 생년월일</span>
+                                            <span class="info-val">2006년 5월 9일</span>
+                                        </div>
+                                        <div class="info-row">
+                                            <span class="info-label"><i class="fa-solid fa-map-pin"></i> 거주지</span>
+                                            <span class="info-val">서울특별시 / 위례신도시</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-section">
+                                    <h4><i class="fa-solid fa-hashtag"></i> KEYWORDS & INTERESTS</h4>
+                                    <div class="tag-cloud">
+                                        <span class="tag">#문헌정보학</span>
+                                        <span class="tag">#INFJ</span>
+                                        <span class="tag">#항상_행복하자</span>
+                                        <span class="tag">#디지털_아카이빙</span>
+                                        <span class="tag">#정보분류학</span>
+                                        <span class="tag">#21살</span>
+                                        <span class="tag">#서울_위례</span>
+                                        <span class="tag">#책과_기록</span>
+                                        <span class="tag">#사진_아카이브</span>
+                                        <span class="tag">#취미는 게임과</span>
+                                        <span class="tag">#사진찍기</span>
+                                        <span class="tag">#데이터_구조화</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-section">
+                                    <h4><i class="fa-solid fa-heart"></i> 나의 강점</h4>
+                                    <p class="detail-text">
+                                        저의 강점은 다양하고 새로운 관점을 열린 태도로 받아들이는 것입니다. 중앙대학교 문헌정보학과와 산업보안학과를 함께 공부하며 정보의 보호와 활용을 폭넓게 이해하고, 서로 다른 지식을 연결하는 역량을 키우고 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Window Footer Navigation -->
+                    <div class="window-footer-nav">
+                        <a href="../Main.html" class="footer-nav-btn"><i class="fa-solid fa-house"></i> 데스크톱 (Main.html)</a>
+                        <a href="gallery.html" class="footer-nav-btn">다음 페이지: 02_사진첩 <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Dock at the bottom -->
+        <footer id="dock">
+            <div class="dock-container">
+                <a href="../Main.html" class="dock-item" title="홈 (Main.html)">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="profile.html" class="dock-item active" title="01_프로필">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span class="dock-dot active"></span>
+                </a>
+                <a href="gallery.html" class="dock-item" title="02_사진첩">
+                    <i class="fa-solid fa-images"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="major.html" class="dock-item" title="03_전공">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="wirye.html" class="dock-item" title="04_위례아지트">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="guestbook.html" class="dock-item" title="05_메모및방명록">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <span class="dock-dot"></span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
