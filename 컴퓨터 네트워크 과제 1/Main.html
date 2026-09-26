@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박종은 - JongEun OS (Main.html)</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="소스 파일/style.css">
+</head>
+
+<body>
+    <div id="desktop">
+        <!-- Top Menu Bar -->
+        <header id="top-bar">
+            <div class="top-bar-left">
+                <a href="Main.html" class="brand-link">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>JongEun OS</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="Main.html" class="nav-item active"><i class="fa-solid fa-house"></i> 데스크톱</a>
+                    <a href="소스 파일/profile.html" class="nav-item"><i class="fa-solid fa-user"></i> 01_프로필</a>
+                    <a href="소스 파일/gallery.html" class="nav-item"><i class="fa-solid fa-images"></i> 02_사진첩</a>
+                    <a href="소스 파일/major.html" class="nav-item"><i class="fa-solid fa-book"></i> 03_전공</a>
+                    <a href="소스 파일/wirye.html" class="nav-item"><i class="fa-solid fa-location-dot"></i> 04_위례_아지트</a>
+                    <a href="소스 파일/guestbook.html" class="nav-item"><i class="fa-solid fa-note-sticky"></i> 05_메모_방명록</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <span id="theme-toggle" class="top-icon" title="다크/라이트 모드 전환"><i class="fa-solid fa-moon"></i></span>
+                <span class="top-icon" title="배터리 100%"><i class="fa-solid fa-battery-full"></i></span>
+                <span class="top-icon" title="Wi-Fi 연결됨"><i class="fa-solid fa-wifi"></i></span>
+                <span id="top-clock">00:00:00</span>
+            </div>
+        </header>
+
+        <!-- Desktop Wallpaper Content & Icons Grid -->
+        <main id="workspace">
+            <div class="desktop-banner">
+                <img class="desktop-profile-photo" src="소스 파일/박종은_프로필.jpg" alt="박종은 프로필 사진">
+                <div class="desktop-banner-copy">
+                    <div class="banner-badge">PORTFOLIO ARCHIVE OS</div>
+                    <h1>PARK JONG-EUN ARCHIVE</h1>
+                    <p>폴더 아이콘을 클릭하면 해당 서브페이지 윈도우 창이 팝업처럼 열립니다 📂</p>
+                </div>
+            </div>
+
+            <!-- Folder Icons Container (Linked to Subpages) -->
+            <div class="folder-grid">
+                <!-- 01 Profile -->
+                <a href="소스 파일/profile.html" class="desktop-icon-link">
+                    <div class="icon-wrapper profile-folder">
+                        <i class="fa-solid fa-folder"></i>
+                        <span class="icon-badge">21</span>
+                    </div>
+                    <span class="icon-label">01_프로필.info</span>
+                </a>
+
+                <!-- 02 Gallery -->
+                <a href="소스 파일/gallery.html" class="desktop-icon-link">
+                    <div class="icon-wrapper gallery-folder">
+                        <i class="fa-solid fa-folder-closed"></i>
+                        <span class="icon-badge">20</span>
+                    </div>
+                    <span class="icon-label">02_사진첩.photos</span>
+                </a>
+
+                <!-- 03 Major -->
+                <a href="소스 파일/major.html" class="desktop-icon-link">
+                    <div class="icon-wrapper library-folder">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <span class="icon-label">03_전공.lib</span>
+                </a>
+
+                <!-- 04 Wirye -->
+                <a href="소스 파일/wirye.html" class="desktop-icon-link">
+                    <div class="icon-wrapper location-folder">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="icon-label">04_위례_아지트.map</span>
+                </a>
+
+                <!-- 05 Guestbook -->
+                <a href="소스 파일/guestbook.html" class="desktop-icon-link">
+                    <div class="icon-wrapper contact-folder">
+                        <i class="fa-solid fa-note-sticky"></i>
+                    </div>
+                    <span class="icon-label">05_메모_방명록.note</span>
+                </a>
+            </div>
+
+        </main>
+
+        <!-- Dock at the bottom -->
+        <footer id="dock">
+            <div class="dock-container">
+                <a href="Main.html" class="dock-item active" title="홈 (Main.html)">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="dock-dot active"></span>
+                </a>
+                <a href="소스 파일/profile.html" class="dock-item" title="01_프로필">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="소스 파일/gallery.html" class="dock-item" title="02_사진첩">
+                    <i class="fa-solid fa-images"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="소스 파일/major.html" class="dock-item" title="03_전공">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="소스 파일/wirye.html" class="dock-item" title="04_위례아지트">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="dock-dot"></span>
+                </a>
+                <a href="소스 파일/guestbook.html" class="dock-item" title="05_메모및방명록">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <span class="dock-dot"></span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="소스 파일/script.js"></script>
+</body>
+</html>
